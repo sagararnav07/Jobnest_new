@@ -1,6 +1,10 @@
 import { Outlet, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
+// Import local images
+import teamCollaborationImg from '../assets/images/external/team-collaboration.jpg'
+import testimonialSarahImg from '../assets/images/external/testimonial-sarah.jpg'
+
 const AuthLayout = () => {
     // Premium features list
     const features = [
@@ -39,7 +43,7 @@ const AuthLayout = () => {
             <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
                 {/* Background Image */}
                 <img 
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80"
+                    src={teamCollaborationImg}
                     alt="Team collaboration"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -146,7 +150,7 @@ const AuthLayout = () => {
                         transition={{ delay: 0.8 }}
                     >
                         <img 
-                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+                            src={testimonialSarahImg}
                             alt="Sarah M."
                             className="w-12 h-12 rounded-full object-cover border-2 border-white/20"
                         />

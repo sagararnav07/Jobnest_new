@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import corporateVideo from '../../assets/video/coroprate.mp4'
 
+// Import local testimonial images
+import testimonialSarahImg from '../../assets/images/external/testimonial-sarah.jpg'
+import testimonialMarcusImg from '../../assets/images/external/testimonial-marcus.jpg'
+import testimonialEmilyImg from '../../assets/images/external/testimonial-emily.jpg'
+
 const Home = () => {
     // Animation variants
     const fadeInUp = {
@@ -371,19 +376,19 @@ const Home = () => {
                                 {
                                     name: 'Sarah Chen',
                                     role: 'Product Designer at Stripe',
-                                    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
+                                    image: testimonialSarahImg,
                                     quote: 'Found my dream job in just 2 weeks! The AI matching is incredibly accurate.'
                                 },
                                 {
                                     name: 'Marcus Johnson',
                                     role: 'Senior Engineer at Google',
-                                    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+                                    image: testimonialMarcusImg,
                                     quote: 'The personality assessment helped me find a role that truly fits my work style.'
                                 },
                                 {
                                     name: 'Emily Rodriguez',
                                     role: 'Marketing Lead at Airbnb',
-                                    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+                                    image: testimonialEmilyImg,
                                     quote: 'Best job platform I have ever used. The direct employer chat was a game-changer.'
                                 }
                             ].map((testimonial, index) => (
